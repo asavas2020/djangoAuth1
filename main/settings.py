@@ -126,3 +126,5 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_REDIRECT_URL = "home" # eğer default olarak redirect olmak istemiyorsak bu satırı yazıp istediğimiz yere redirect olabiliriz
+
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend" # password resetlemek için backend in kullanıcıya mail göndermesi için yazdık
